@@ -10,9 +10,9 @@ jobs:
       - checkout
       - run: curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl"
       - run: chmod +x ./kubectl
-      - run: curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-324.0.0-linux-x86_64.tar.gz
-      - run: tar -zxvf google-cloud-sdk-*
-      - run: ./google-cloud-sdk/install.sh
+      - run: curl https://sdk.cloud.google.com > install.sh
+      - run: chmod +x ./install.sh
+      - run: ./install.sh --disable-prompts
       - run: ./kubectl get --kubeconfig=./config pods
 
 # Orchestrate our job run sequence
