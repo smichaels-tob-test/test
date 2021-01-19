@@ -14,5 +14,3 @@ kind: Config
 preferences: {}
 users:
 - name: gke_nortal-server-k8s_us-east1_tob-k8s-cluster
-  user:
-      name: gcp
