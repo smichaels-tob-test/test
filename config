@@ -19,7 +19,7 @@ users:
       config:
         access-token: ya29.a0AfH6SMDT_AjDSVOTZaP8a-JNvr9RP88pG-QHsNM5DwrLd41tychlbd8mOesgKQYNoyRZLnueX1Uyt00uIrGd2Y1RuHEuzdZApiCUcr4CPwhnUmmlr0fMn4UiShvzpJ5XWpwbRLAm8usnlbndIJTqBbJqEYm64-Jkaa_u30gS852cCyGVmaTr
         cmd-args: config config-helper --format=json
-        cmd-path: /snap/google-cloud-sdk/162/bin/gcloud
+        cmd-path: gcloud
         expiry: "2021-01-15T01:15:27Z"
         expiry-key: '{.credential.token_expiry}'
         token-key: '{.credential.access_token}'
