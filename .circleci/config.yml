@@ -13,7 +13,6 @@ jobs:
       - run: curl https://sdk.cloud.google.com > install.sh
       - run: chmod +x ./install.sh
       - run: ./install.sh --disable-prompts
-      - run: find / -name gcloud -type f
       - run: ./kubectl get --kubeconfig=./config pods
 
 # Orchestrate our job run sequence
