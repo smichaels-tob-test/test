@@ -10,7 +10,7 @@ jobs:
       - checkout
       - run: curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl"
       - run: chmod +x ./kubectl
-      - run: ./kubectl get pods
+      - run: ./kubectl --kubeconfig=./config get pods
 
 # Orchestrate our job run sequence
 workflows:
